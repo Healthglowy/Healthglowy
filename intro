@@ -1,0 +1,33 @@
+class Website:
+    def __init__(self, title, description_short, description_long, website_url, email, username, address):
+        self.title = title
+        self.description_short = description_short
+        self.description_long = description_long
+        self.website_url = website_url
+        self.email = email
+        self.username = username
+        self.address = address
+
+    def introduce(self):
+        print("Title:\t" + self.title)
+        print("Description (Short):\t" + self.description_short)
+        print("Description (Long):\t" + self.description_long)
+        print("Website:\t" + self.website_url)
+        print("Gmail:\t" + self.email)
+        print("Username:\t" + self.username)
+        print("Address:\t" + self.address)
+
+
+# Tạo một đối tượng Website
+healthglowy = Website(
+    title="Healthglowy| Deal Tips Beauti Tips Healthy Affiliate News Beauti & Healthy",
+    description_short="Healthglowy.com is a community blog, shares tips, beauty methods, and improving women's health. Update and review the best products for women.",
+    description_long="Healthglowy is a community blog that shares tips and beauty methods to improve women's health. They also review the best products for women. Immerse yourself in a world of health and beauty on Healthy Glowy, a community blog committed to enhancing women's well-being. Navigate through their reviews highlighting the best products specifically tailored for women.",
+    website_url="https://healthglowy.com/",
+    email="healthglowydeals@gmail.com",
+    username="Healthglowy",
+    address="United States"
+)
+
+# Giới thiệu website
+healthglowy.introduce()
